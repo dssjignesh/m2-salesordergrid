@@ -1,5 +1,7 @@
 /*global define*/
-define(['jquery'], function ($) {
+define(['jquery',
+    'Dss_SalesOrderGrid/js/grid/order-grid-config'
+], function ($) {
     'use strict';
 
     return function (Element) {
@@ -11,17 +13,17 @@ define(['jquery'], function ($) {
                 this._super();
 
                 // Apply amount display only if defined & enabled
-                if (window.mpSalesOrderGridConfig !== undefined
-                    && (window.mpSalesOrderGridConfig.is_active !== undefined
-                        && window.mpSalesOrderGridConfig.is_active
+                if (window.mpSalesOrderGridConfig.config !== undefined
+                    && (window.mpSalesOrderGridConfig.config.is_active !== undefined
+                        && window.mpSalesOrderGridConfig.config.is_active
                     )
                     && $('.sales-order-index #mp-sales-order-totals').length
                 ) {
                     var items                   = data.items;
                     var totalAmount             = 0;
-                    var baseCurrency            = window.mpSalesOrderGridConfig.base_currency_symbol;
-                    var amountDisplayTemplate   = window.mpSalesOrderGridConfig.amount_display_text;
-                    var enableRounding          = window.mpSalesOrderGridConfig.amount_display_rounding;
+                    var baseCurrency            = window.mpSalesOrderGridConfig.config.base_currency_symbol;
+                    var amountDisplayTemplate   = window.mpSalesOrderGridConfig.config.amount_display_text;
+                    var enableRounding          = window.mpSalesOrderGridConfig.config.amount_display_rounding;
                     _.each(items, function (item) {
                         if (item['base_grand_total']) {
                             var baseGrandTotal = item['base_grand_total'].replace(baseCurrency, '');

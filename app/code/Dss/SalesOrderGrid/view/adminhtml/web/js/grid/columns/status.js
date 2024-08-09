@@ -1,14 +1,15 @@
 define([
     'underscore',
     'Magento_Ui/js/grid/columns/select',
+    'Dss_SalesOrderGrid/js/grid/order-grid-config'
 ], function(_, Column) {
     'use strict';
 
     return Column.extend({
         defaults: {
-            bodyTmpl: window.mpSalesOrderGridConfig !== undefined
-                && (window.mpSalesOrderGridConfig.is_active !== undefined
-                    && window.mpSalesOrderGridConfig.is_active
+            bodyTmpl: window.mpSalesOrderGridConfig.config !== undefined
+                && (window.mpSalesOrderGridConfig.config.is_active !== undefined
+                    && window.mpSalesOrderGridConfig.config.is_active
                 ) ? 'Dss_SalesOrderGrid/ui/grid/cells/status' : 'ui/grid/cells/text'
         },
         getStatusTextColor(hexCode) {

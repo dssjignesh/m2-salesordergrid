@@ -14,6 +14,12 @@
 <?php
 /** @var $block \Dss\SalesOrderGrid\Block\Adminhtml\Sales\Order\Js */
 ?>
-<script>
-window.mpSalesOrderGridConfig = <?= /* @noEscape */ json_encode($block->getGridConfig()); ?>;
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Dss_SalesOrderGrid/js/grid/order-grid-config": {
+                "config": <?= /* @noEscape */ $block->getGridConfigJson(); ?>
+            }
+        }
+    }
 </script>

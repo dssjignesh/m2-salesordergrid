@@ -113,4 +113,14 @@ class Js extends Template
             'amount_display_rounding'   => $this->getAmountDisplayRounding()
         ];
     }
+
+    /**
+     * Grid config Json function
+     *
+     * @return string
+     */
+    public function getGridConfigJson(): string
+    {
+        return json_encode($this->getGridConfig());
+    }
 }
