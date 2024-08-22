@@ -30,7 +30,7 @@ class Config implements ConfigInterface
 
     public const XML_PATH_GRID_AMOUNT_DISPLAY_TEXT       = 'Dss_salesordergrid/grid/amount_display_text';
     public const XML_PATH_GRID_AMOUNT_DISPLAY_ROUNDING   = 'Dss_salesordergrid/grid/amount_display_rounding';
-    private const XML_PATH_GRID_STATUS_COLOR = 'Dss_salesordergrid/grid/status_color';
+    public const XML_PATH_GRID_STATUS_COLOR = 'Dss_salesordergrid/grid/status_color';
 
     /**
      * Config Model constructor.
@@ -146,6 +146,10 @@ class Config implements ConfigInterface
      */
     public function getGridStatusColor($storeId = null): string
     {
-        return $this->getConfigValue(self::XML_PATH_GRID_STATUS_COLOR, $storeId);
+        $configValue = $this->getConfigValue(self::XML_PATH_GRID_STATUS_COLOR, $storeId);
+        if (is_array($configValue)) {
+            $configValue = '';
+        }
+        return $configValue;
     }
 }
