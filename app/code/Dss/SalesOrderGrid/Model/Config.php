@@ -25,12 +25,12 @@ class Config implements ConfigInterface
 {
     public const DEFAULT_AMOUNT_DISPLAY_TEXT = '| Total amount {{amount}}';
 
-    public const XML_PATH_ENABLED = 'Dss_salesordergrid/general/enabled';
-    public const XML_PATH_DEBUG = 'Dss_salesordergrid/general/debug';
+    public const XML_PATH_ENABLED = 'salesordergrid/general/enabled';
+    public const XML_PATH_DEBUG = 'salesordergrid/general/debug';
 
-    public const XML_PATH_GRID_AMOUNT_DISPLAY_TEXT       = 'Dss_salesordergrid/grid/amount_display_text';
-    public const XML_PATH_GRID_AMOUNT_DISPLAY_ROUNDING   = 'Dss_salesordergrid/grid/amount_display_rounding';
-    public const XML_PATH_GRID_STATUS_COLOR = 'Dss_salesordergrid/grid/status_color';
+    public const XML_PATH_GRID_AMOUNT_DISPLAY_TEXT       = 'salesordergrid/grid/amount_display_text';
+    public const XML_PATH_GRID_AMOUNT_DISPLAY_ROUNDING   = 'salesordergrid/grid/amount_display_rounding';
+    public const XML_PATH_GRID_STATUS_COLOR = 'salesordergrid/grid/status_color';
 
     /**
      * Config Model constructor.
