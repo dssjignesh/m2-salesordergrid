@@ -20,7 +20,7 @@
             module="Dss_SalesOrderGrid"
             sortOrder="20"
             parent="Dss_Core::dss_sub_menu"
-            action="adminhtml/system_config/edit/section/Dss_salesordergrid"
+            action="adminhtml/system_config/edit/section/salesordergrid"
             resource="Dss_SalesOrderGrid::menu_config" />
     </menu>
 </config>
