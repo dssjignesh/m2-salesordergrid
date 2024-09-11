@@ -21,7 +21,7 @@
                 <debug>0</debug>
             </general>
             <grid>
-                <amount_display_text>Total amount {{amount}}</amount_display_text>
+                <amount_display_text>| Total amount {{amount}}</amount_display_text>
                 <amount_display_rounding>1</amount_display_rounding>
                 <status_color>
                     <item1>

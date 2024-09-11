@@ -16,11 +16,11 @@
     xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="Dss_SalesOrderGrid::menu_config"
-            title="Enhanced Order Grid"
+            title="Sales Order Grid Configration"
             module="Dss_SalesOrderGrid"
             sortOrder="20"
             parent="Dss_Core::dss_sub_menu"
-            action="adminhtml/system_config/edit/section/Dss_salesordergrid"
+            action="adminhtml/system_config/edit/section/salesordergrid"
             resource="Dss_SalesOrderGrid::menu_config" />
     </menu>
 </config>

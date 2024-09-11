@@ -1,6 +1,6 @@
 /*global define*/
-define(['jquery',
-    'Dss_SalesOrderGrid/js/grid/order-grid-config'
+define([
+    'jquery'
 ], function ($) {
     'use strict';
 
@@ -12,8 +12,7 @@ define(['jquery',
             onReload: function (data) {
                 this._super();
 
-                // Apply amount display only if defined & enabled
-                if (window.mpSalesOrderGridConfig.config !== undefined
+                if (window.mpSalesOrderGridConfig !== undefined
                     && (window.mpSalesOrderGridConfig.config.is_active !== undefined
                         && window.mpSalesOrderGridConfig.config.is_active
                     )

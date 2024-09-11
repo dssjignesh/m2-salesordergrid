@@ -1,7 +1,6 @@
 define([
     'underscore',
-    'Magento_Ui/js/grid/columns/select',
-    'Dss_SalesOrderGrid/js/grid/order-grid-config'
+    'Magento_Ui/js/grid/columns/select'
 ], function(_, Column) {
     'use strict';
 
