@@ -17,7 +17,7 @@
     <system>
         <section id="salesordergrid" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
             <tab>dss</tab>
-            <label>Enhanced Order Grid</label>
+            <label>Enhanced Sales Order Grid</label>
             <resource>Dss_SalesOrderGrid::config</resource>
             <group id="general" translate="label" sortOrder="20" showInDefault="1" showInWebsite="0" showInStore="0">
                 <label>General Settings</label>
