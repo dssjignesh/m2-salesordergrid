@@ -16,7 +16,7 @@ declare(strict_types=1);
  * @copyright Copyright (c) 2024 Digit Software Solutions. ( https://digitsoftsol.com )
  */
 
-namespace Dss\SalesOrderGrid\Block\Adminhtml\System\Config\Form\Field\FieldArray;
+namespace Dss\SalesOrderGrid\Block\Adminhtml\System\Config\Form\Field;
 
 use Magento\Config\Block\System\Config\Form\Field\FieldArray\AbstractFieldArray;
 use Magento\Framework\DataObject;
@@ -24,9 +24,8 @@ use Magento\Framework\Exception\LocalizedException;
 use Dss\SalesOrderGrid\Block\Adminhtml\System\Config\Form\Field\OrderStatusColumn;
 use Dss\SalesOrderGrid\Block\Adminhtml\System\Config\Form\Field\ColorColumn;
 
-class OrderStatusColor extends AbstractFieldArray
+class Color extends AbstractFieldArray
 {
-
     /**
      * @var OrderStatusColumn
      */
