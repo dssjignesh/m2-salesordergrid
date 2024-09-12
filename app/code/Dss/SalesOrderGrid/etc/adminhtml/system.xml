@@ -52,9 +52,10 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <tooltip><![CDATA[If enabled decimal precision will be removed from total amount.]]></tooltip>
                 </field>
-                <field id="status_color" translate="label" sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
+                <field id="status_color" translate="label"
+                    sortOrder="30" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Order Status Colors</label>
-                    <frontend_model>Dss\SalesOrderGrid\Block\Adminhtml\System\Config\Form\Field\FieldArray\OrderStatusColor</frontend_model>
+                    <frontend_model>Dss\SalesOrderGrid\Block\Adminhtml\System\Config\Form\Field\Color</frontend_model>
                     <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
                 </field>
             </group>
